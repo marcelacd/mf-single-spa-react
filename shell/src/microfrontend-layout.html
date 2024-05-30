@@ -1,0 +1,22 @@
+<single-spa-router>
+  <main>
+    <route default>
+      <div>
+        <h1>To-Do List</h1>
+      </div>
+      <!-- <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;"> -->
+      <div>
+        <application
+          name="@todo/registerTodo"
+          props="UtilsFunctions"
+        ></application>
+      </div>
+      <div>
+        <application 
+          name="@todo/listTodo" 
+          props="UtilsFunctions"
+        ></application>
+      </div>
+    </route>
+  </main>
+</single-spa-router>
